@@ -4,7 +4,7 @@ A very unstructured, 3 months of delightful notes (gosh, it took long)
 ❗❗❗ **If you find some mistakes/errors, please correct them before being a salty boi🧂 (then you can be one 😉)** ❗❗❗
 ❗❗❗ **CTRL + F -> Search For The Service** ❗❗❗
 
-Miscellaneous:
+Miscellaneous
 * Rehost(Lift and Shift)
       + This strategy involves lifting a part of the application or a complete application from on-premise or existing cloud environment to a new cloud environment AS IS
 * Replatform(Lift, Tinker and Shift)
