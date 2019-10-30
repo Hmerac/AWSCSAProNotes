@@ -235,8 +235,8 @@ S3
 * Folder level permissions for Active Directory is accomplished by aws.username in group policies
 * Cloudwatch Logs Exporting to S3 buckets that are encrypted with AES-256 is supported. Exporting to S3 buckets encrypted with SSE-KMS is not supported
 * S3 Website format
-  - <bucket-name>.s3-website-<AWS-region>.amazonaws.com
-  - <bucket-name>.s3-website.<AWS-region>.amazonaws.com
+  - (bucket-name).s3-website-(AWS-region).amazonaws.com
+  - (bucket-name).s3-website.(AWS-region).amazonaws.com
 * S3 Endpoints
   - s3.amazonaws.com
   - s3.us-east-1.amazonaws.com
