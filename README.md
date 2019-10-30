@@ -4,16 +4,16 @@ A very unstructured, 3 months of delightful notes (gosh, it took long)
 ❗❗❗ **If you find some mistakes/errors, please correct them before being a salty boi🧂 (then you can be one 😉)** ❗❗❗
 
 Miscellaneous:
-	* Rehost(Lift and Shift)
-  	    This strategy involves lifting a part of the application or a complete application from on-premise or existing cloud environment to a new cloud environment AS IS
-    Replatform(Lift, Tinker and Shift)
-  	    Similar to Rehost but, a portion of the application or the entire application is optimized or a little before moving to the cloud
-    Refactor(Rearchitect)
-  	    Rearchitect entails making major changes in the application configuration as well as application code for migration
-    Repurchase(Drop and Shop)
-        Dropping the application and Moving to a complete new Solution
-  * OSI Layers: (1) Physical, (2) Data Link, (3) Networking, (4) Transport, (5) Session, (6) Presentation, (7) Application
-  * Support Tiers: 
+* Rehost(Lift and Shift)
+      + This strategy involves lifting a part of the application or a complete application from on-premise or existing cloud environment to a new cloud environment AS IS
+* Replatform(Lift, Tinker and Shift)
+      + Similar to Rehost but, a portion of the application or the entire application is optimized or a little before moving to the cloud
+* Refactor(Rearchitect)
+      + Rearchitect entails making major changes in the application configuration as well as application code for migration
+* Repurchase(Drop and Shop)
+      + Dropping the application and Moving to a complete new Solution
+* OSI Layers: (1) Physical, (2) Data Link, (3) Networking, (4) Transport, (5) Session, (6) Presentation, (7) Application
+* Support Tiers: 
     + Basic
       * 2 Core Trusted Advisor Checks
       * Basic Support plan customers are restricted to customer support and service limit increase cases
@@ -31,7 +31,7 @@ Miscellaneous:
       * AWS Support API
       * All proactive programs
       * Designated Technical Account Manager (TAM) to proactively monitor your environment and assist with optimization
-  * Instance Types: Dr Mc GIFT PX
+* Instance Types: Dr Mc GIFT PX
     + D = Density(HDD)
     + R = RAM
     + M = Main(General Purpose)
