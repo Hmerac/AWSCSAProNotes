@@ -2,6 +2,7 @@
 A very unstructured, 3 months of delightful notes (gosh, it took long)
 
 ❗❗❗ **If you find some mistakes/errors, please correct them before being a salty boi🧂 (then you can be one 😉)** ❗❗❗
+❗❗❗ **CTRL + F -> Search For The Service** ❗❗❗
 
 Miscellaneous:
 * Rehost(Lift and Shift)
