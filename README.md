@@ -4,6 +4,14 @@ A very unstructured, 3 months of delightful notes (gosh, it took long)
 ❗❗❗ **If you find some mistakes/errors, please correct them before being a salty boi🧂 (then you can be one 😉)** ❗❗❗
 ❗❗❗ **CTRL + F -> Search For The Service** ❗❗❗
 
+Materials (Prioritized)
+
+1. Linux Academy Course
+2. BrainCert Practice Tests
+3. TutorialsDojo
+4. Udemy Jon Bonso Practice Tests
+5. Some Core Deep Dives
+
 Miscellaneous
 * Rehost(Lift and Shift)
       + This strategy involves lifting a part of the application or a complete application from on-premise or existing cloud environment to a new cloud environment AS IS
