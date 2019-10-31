@@ -7,10 +7,15 @@ A very unstructured, 3 months of delightful notes (gosh, it took long)
 Materials (Prioritized)
 
 1. Linux Academy Course
+   - https://linuxacademy.com/course/aws-certified-solutions-architect-professional-2018/
 2. BrainCert Practice Tests
+   - https://www.braincert.com/course/10323-AWS-Certified-Solutions-Architect-%E2%80%93-Professional-Practice-Exams
 3. TutorialsDojo
+   - https://tutorialsdojo.com/aws-cheat-sheets-overview/
 4. Udemy Jon Bonso Practice Tests
-5. Some Core Deep Dives
+   - https://www.udemy.com/course/aws-solutions-architect-professional-practice-exams-2018/
+5. Some Core Deep Dives (Must Watch Each One)
+   - https://www.youtube.com/playlist?list=PL9ws_90e5R3wemdD6VLD1qlWEAJytbtu7
 
 Miscellaneous
 * Rehost(Lift and Shift)
