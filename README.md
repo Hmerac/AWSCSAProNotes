@@ -99,7 +99,7 @@ VPC
 * NAT Gateway doesn't support IPv6, egress internet gateway supports IPv6
 * Priority: Local, Longest Prefix(Highest bit 32>18), Static Routes(ie. Static VPN), DX over BGP, VPN over BGP
 * Flowlog: Attached to VPC, subnet, or ENI and only shows metadata
-* Direct connections are not encrypted(You can do it with DX + VPN)
+* Direct connections are not encrypted(You can do it with DX + VPN or SSL/TLS)
 * Direct Connect Gateway supports up to 10 VPCs
 * A link aggregation group (LAG) is a logical interface that uses the Link Aggregation Control Protocol (LACP) to aggregate multiple connections at a single AWS Direct Connect endpoint, allowing you to treat them as a single, managed connection, also increasing bandwith performance by bundling them
 * CloudHub is used for connecting multiple customer network(CGW) to a single VPC(VGW)
