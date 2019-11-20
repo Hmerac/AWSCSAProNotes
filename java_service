@@ -1,0 +1,16 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: java
+  namespace: default
+  labels:
+    k8s-app: java
+spec:
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+  selector:
+    k8s-app: java
+  type: ClusterIP
