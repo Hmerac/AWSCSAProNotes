@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: java
-        image: mert/java-app:$latest
+        image: mert/java-app
         imagePullPolicy: Never
         securityContext:
           privileged: false
