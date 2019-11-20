@@ -1,0 +1,53 @@
+apiVersion: zalando.org/v1
+kind: StackSet
+metadata:
+  name: hotels
+spec:
+  ingress:
+    hosts: hotels.com
+    backendPort: 80
+  traffic:
+  - stackName: go-v1
+    weight: 70
+  - stackName: java-v1
+    weight: 30
+  stackLifecycle:
+    scaledownTTLSeconds: 300
+    limit: 5
+  stackTemplate:
+    spec:
+      version: v1
+      replicas: 1
+      podTemplate:
+        spec:
+          containers:
+          - name: java
+            image: mert/go-app
+            ports:
+            - containerPort: 80
+              name: ingress
+            resources:
+              limits:
+                cpu: 100m
+                memory: 500Mi
+              requests:
+                cpu: 100m
+                memory: 500Mi
+    spec:
+      version: v1
+      replicas: 1
+      podTemplate:
+        spec:
+          containers:
+          - name: java
+            image: mert/java-app
+            ports:
+            - containerPort: 80
+              name: ingress
+            resources:
+              limits:
+                cpu: 100m
+                memory: 500Mi
+              requests:
+                cpu: 100m
+                memory: 500Mi
