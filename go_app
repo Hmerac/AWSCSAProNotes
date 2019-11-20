@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: go
-        image: mert/go-app:$latest
+        image: mert/go-app
         imagePullPolicy: Never
         securityContext:
           privileged: false
