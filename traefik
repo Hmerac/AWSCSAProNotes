@@ -2,15 +2,14 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   annotations:
-    kubernetes.io/ingress.class: traefik-external
     traefik.ingress.kubernetes.io/service-weights: |
       go: 70%
       java: 30%
-  name: traefik
-  namespace: default
+  name: traefik-web-ui
+  namespace: kube-system
 spec:
   rules:
-  - host: hotels.com
+  - host: traefik-ui.minikube
     http:
       paths:
       - backend:
@@ -21,5 +20,3 @@ spec:
           serviceName: java
           servicePort: 80
         path: /
-status:
-  loadBalancer: {}
