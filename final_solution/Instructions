@@ -1,0 +1,20 @@
+1-) sudo minikube start --memory=8192 --cpus=4 --kubernetes-version=v1.15.2 --vm-driver none
+
+# To run minikube without sudo privilige
+2-) sudo mv /home/hmerac/.kube /home/hmerac/.minikube $HOME
+3-) sudo chown -R $USER /home/hmerac/.kube /home/hmerac/.minikube
+
+# Install Istio
+4-) curl -L https://git.io/getLatestIstio | sh -
+5-) for i in install/kubernetes/helm/istio-init/files/crd*yaml; do kubectl apply -f $i; done
+6-) kubectl apply -f install/kubernetes/istio-demo.yaml
+7-) kubectl label namespace default istio-injection=enabled
+
+8-) Dockerize and deploy apps on Kubernetes
+
+# Testing deployment
+9-) kubectl port-forward deployment/hotelizer-go 8080:8080 (Test -> http://localhost:8080)
+
+10-) After being sure that service is working, configure /etc/hosts with ingress' IP
+
+11-) curl http://hotelizer.com

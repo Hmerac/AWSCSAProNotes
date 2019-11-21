@@ -1,0 +1,51 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hotelizer
+  labels:
+    app: hotelizer
+spec:
+  type: ClusterIP
+  ports:
+  - port: 8080
+    name: http
+  selector:
+    app: hotelizer
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: hotelizer-go
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: hotelizer
+        version: go
+    spec:
+      containers:
+      - name: hotelizer
+        image: mert/hotelizer:go
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: hotelizer-java
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: hotelizer
+        version: java
+    spec:
+      containers:
+      - name: hotelizer
+        image: mert/hotelizer:java
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080

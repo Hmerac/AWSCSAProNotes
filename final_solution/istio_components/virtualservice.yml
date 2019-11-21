@@ -1,0 +1,19 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: hotelizer
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - hotelizer-gateway
+  http:
+    - route:
+      - destination:
+          host: hotelizer
+          subset: go
+        weight: 70
+      - destination:
+          host: hotelizer
+          subset: java
+        weight: 30

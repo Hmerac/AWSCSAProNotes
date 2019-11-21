@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: hotelizer
+spec:
+  host: hotelizer
+  subsets:
+  - name: java
+    labels:
+      version: java
+  - name: go
+    labels:
+      version: go
+  trafficPolicy:
+    tls:
+      mode: ISTIO_MUTUAL
