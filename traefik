@@ -1,10 +1,6 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  annotations:
-    traefik.ingress.kubernetes.io/service-weights: |
-      go: 70%
-      java: 30%
   name: traefik-web-ui
   namespace: kube-system
 spec:
@@ -12,11 +8,7 @@ spec:
   - host: traefik-ui.minikube
     http:
       paths:
-      - backend:
+      - path: /
+        backend:
           serviceName: go
-          servicePort: 80
-        path: /
-      - backend:
-          serviceName: java
-          servicePort: 80
-        path: /
+          servicePort: web
