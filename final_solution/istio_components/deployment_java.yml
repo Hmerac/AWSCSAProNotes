@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: trivago-java
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: trivago
+  template:
+    metadata:
+      labels:
+        app: trivago
+        version: java
+    spec:
+      containers:
+      - name: trivago
+        image: mert/trivago:java
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080

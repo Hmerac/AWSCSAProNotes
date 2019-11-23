@@ -1,9 +1,9 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
-  name: hotelizer
+  name: trivago
 spec:
-  host: hotelizer
+  host: trivago
   subsets:
   - name: java
     labels:
@@ -11,6 +11,3 @@ spec:
   - name: go
     labels:
       version: go
-  trafficPolicy:
-    tls:
-      mode: ISTIO_MUTUAL
