@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: trivago
+  name: nodejs
   labels:
-    app: trivago
+    app: nodejs
 spec:
   type: ClusterIP
   ports:
   - port: 8080
     name: http
   selector:
-    app: trivago
+    app: nodejs
