@@ -1,5 +1,5 @@
 {
-  "name": "docker_web_app",
+  "name": "docker_nodejs",
   "version": "1.0.0",
   "description": "Node.js on Docker",
   "author": "Hmerac",
