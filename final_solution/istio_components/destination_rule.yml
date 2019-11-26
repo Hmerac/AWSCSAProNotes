@@ -1,13 +1,13 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: DestinationRule
 metadata:
-  name: trivago
+  name: nodejs
 spec:
-  host: trivago
+  host: nodejs
   subsets:
-  - name: java
+  - name: feature
     labels:
-      version: java
-  - name: go
+      version: feature
+  - name: production
     labels:
-      version: go
+      version: production
