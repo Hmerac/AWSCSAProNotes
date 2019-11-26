@@ -16,6 +16,6 @@ spec:
       containers:
       - name: nodejs
         image: hmerac/nodejs:production
-        imagePullPolicy: Never
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
