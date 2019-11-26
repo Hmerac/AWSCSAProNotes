@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: trivago-go
+  name: nodejs-production
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: trivago
+      app: nodejs
   template:
     metadata:
       labels:
-        app: trivago
-        version: go
+        app: nodejs
+        version: production
     spec:
       containers:
-      - name: trivago
-        image: mert/trivago:go
+      - name: nodejs
+        image: hmerac/nodejs:production
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
