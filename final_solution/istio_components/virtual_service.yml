@@ -1,19 +1,19 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: trivago
+  name: nodejs
 spec:
   hosts:
   - "*"
   gateways:
-  - trivago-gateway
+  - nodejs-gateway
   http:
     - route:
       - destination:
-          host: trivago
-          subset: go
-        weight: 70
+          host: nodejs
+          subset: production
+        weight: 90
       - destination:
-          host: trivago
-          subset: java
-        weight: 30
+          host: nodejs
+          subset: feature
+        weight: 10
