@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: trivago-java
+  name: nodejs-feature
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: trivago
+      app: nodejs
   template:
     metadata:
       labels:
-        app: trivago
-        version: java
+        app: nodejs
+        version: feature
     spec:
       containers:
-      - name: trivago
-        image: mert/trivago:java
+      - name: nodejs
+        image: hmerac/nodejs:feature
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
