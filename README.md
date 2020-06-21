@@ -1,5 +1,5 @@
 # AWSCSAProNotes
-A very unstructured, 3 months of delightful notes (gosh, it took long)
+A very unstructured, 3 months of delightful notes
 
 **CTRL + F -> Search For The Service**
 
