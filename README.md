@@ -1,9 +1,7 @@
 # AWSCSAProNotes
 A very unstructured, 3 months of delightful notes (gosh, it took long)
 
-❗❗❗ **If you find some mistakes/errors, please correct them. I might did something wrong** ❗❗❗
-
-❗❗❗ **CTRL + F -> Search For The Service** ❗❗❗
+**CTRL + F -> Search For The Service**
 
 Materials (Prioritized)
 
